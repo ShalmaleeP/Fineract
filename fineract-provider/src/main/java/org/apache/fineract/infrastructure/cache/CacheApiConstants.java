@@ -24,8 +24,8 @@ import java.util.Set;
 
 public class CacheApiConstants {
 
-    public static final String RESOURCE_NAME = "CACHE";
-    public static final String cacheTypeParameter = "cacheType";
-    public static final Set<String> REQUEST_DATA_PARAMETERS = new HashSet<>(Arrays.asList(cacheTypeParameter));
+    protected static final String RESOURCE_NAME = "CACHE";
+    protected static final String cacheTypeParameter = "cacheType";
+    protected static final Set<String> REQUEST_DATA_PARAMETERS = new HashSet<>(Arrays.asList(cacheTypeParameter));
 
 }

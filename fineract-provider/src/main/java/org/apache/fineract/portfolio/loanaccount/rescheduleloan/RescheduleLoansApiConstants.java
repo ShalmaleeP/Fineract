@@ -48,7 +48,7 @@ public class RescheduleLoansApiConstants {
     public static final String resheduleForMultiDisbursementNotSupportedErrorCode = "loan.reschedule.multidisbursement.error.code";
     public static final String resheduleWithInterestRecalculationNotSupportedErrorCode = "loan.reschedule.interestrecalculation.error.code";
     
-    public static final Set<String> CREATE_REQUEST_DATA_PARAMETERS = new HashSet<>(Arrays.asList(localeParamName, dateFormatParamName,
+    protected static final Set<String> CREATE_REQUEST_DATA_PARAMETERS = new HashSet<>(Arrays.asList(localeParamName, dateFormatParamName,
             graceOnPrincipalParamName, recurringMoratoriumOnPrincipalPeriodsParamName, graceOnInterestParamName, extraTermsParamName, rescheduleFromDateParamName,
             newInterestRateParamName, rescheduleReasonIdParamName, rescheduleReasonCommentParamName, submittedOnDateParamName,
             loanIdParamName, adjustedDueDateParamName, recalculateInterestParamName));
@@ -56,12 +56,12 @@ public class RescheduleLoansApiConstants {
     // reject action request parameters
     public static final String rejectedOnDateParam = "rejectedOnDate";
 
-    public static final Set<String> REJECT_REQUEST_DATA_PARAMETERS = new HashSet<>(Arrays.asList(localeParamName, dateFormatParamName,
+    protected static final Set<String> REJECT_REQUEST_DATA_PARAMETERS = new HashSet<>(Arrays.asList(localeParamName, dateFormatParamName,
             rejectedOnDateParam));
 
     // approve action request parameters
     public static final String approvedOnDateParam = "approvedOnDate";
 
-    public static final Set<String> APPROVE_REQUEST_DATA_PARAMETERS = new HashSet<>(Arrays.asList(localeParamName, dateFormatParamName,
+    protected static final Set<String> APPROVE_REQUEST_DATA_PARAMETERS = new HashSet<>(Arrays.asList(localeParamName, dateFormatParamName,
             approvedOnDateParam));
 }

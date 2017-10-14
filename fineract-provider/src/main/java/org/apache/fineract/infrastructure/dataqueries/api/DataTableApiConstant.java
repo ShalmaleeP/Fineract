@@ -32,7 +32,7 @@ public class DataTableApiConstant {
 
     public static final String categoryParamName ="category";
     public static final String localParamName = "locale";
-    public static final Set<String> REGISTER_PARAMS = new HashSet<>(Arrays.asList(categoryParamName,localParamName));
+    protected static final Set<String> REGISTER_PARAMS = new HashSet<>(Arrays.asList(categoryParamName,localParamName));
 
     public static final String DATATABLE_RESOURCE_NAME ="dataTables";
 

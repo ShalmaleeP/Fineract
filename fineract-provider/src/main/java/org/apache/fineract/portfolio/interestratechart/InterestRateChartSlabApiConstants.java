@@ -48,15 +48,15 @@ public class InterestRateChartSlabApiConstants {
 
     // associations
 
-    public static final Set<String> INTERESTRATE_CHART_SLAB_CREATE_REQUEST_DATA_PARAMETERS = new HashSet<>(Arrays.asList(
+    protected static final Set<String> INTERESTRATE_CHART_SLAB_CREATE_REQUEST_DATA_PARAMETERS = new HashSet<>(Arrays.asList(
             localeParamName, idParamName, descriptionParamName, periodTypeParamName, fromPeriodParamName, toPeriodParamName,
             amountRangeFromParamName, amountRangeToParamName, annualInterestRateParamName, currencyCodeParamName, incentivesParamName));
 
-    public static final Set<String> INTERESTRATE_CHART_SLAB_UPDATE_REQUEST_DATA_PARAMETERS = new HashSet<>(Arrays.asList(
+    protected static final Set<String> INTERESTRATE_CHART_SLAB_UPDATE_REQUEST_DATA_PARAMETERS = new HashSet<>(Arrays.asList(
             localeParamName, idParamName, descriptionParamName, periodTypeParamName, fromPeriodParamName, toPeriodParamName,
             amountRangeFromParamName, amountRangeToParamName, annualInterestRateParamName, currencyCodeParamName, incentivesParamName));
 
-    public static final Set<String> INTERESTRATE_CHART_SLAB_RESPONSE_DATA_PARAMETERS = new HashSet<>(Arrays.asList(localeParamName,
+    protected static final Set<String> INTERESTRATE_CHART_SLAB_RESPONSE_DATA_PARAMETERS = new HashSet<>(Arrays.asList(localeParamName,
             idParamName, descriptionParamName, periodTypeParamName, fromPeriodParamName, toPeriodParamName, amountRangeFromParamName,
             amountRangeToParamName, annualInterestRateParamName, currencyCodeParamName, incentivesParamName));
 }

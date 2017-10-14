@@ -46,18 +46,18 @@ public interface AdHocQuerySearchConstants {
     public static final String maxOutstandingAmountParamName = "maxOutstandingAmount";
     public static final String outstandingAmountParamName = "outstandingAmount";
 
-    public static final Set<String> AD_HOC_SEARCH_QUERY_REQUEST_DATA_PARAMETERS = new HashSet<>(Arrays.asList(entitiesParamName, loanStatusParamName,
+    protected static final Set<String> AD_HOC_SEARCH_QUERY_REQUEST_DATA_PARAMETERS = new HashSet<>(Arrays.asList(entitiesParamName, loanStatusParamName,
             loanProductsParamName, officesParamName, loanDateOptionParamName, loanFromDateParamName, loanToDateParamName,
             includeOutStandingAmountPercentageParamName, outStandingAmountPercentageConditionParamName,
             minOutStandingAmountPercentageParamName, maxOutStandingAmountPercentageParamName, outStandingAmountPercentageParamName,
             includeOutstandingAmountParamName, outstandingAmountConditionParamName, minOutstandingAmountParamName,
             maxOutstandingAmountParamName, outstandingAmountParamName, localeParamName, dateFormatParamName));
 
-    public static final Set<String> AD_HOC_SEARCH_QUERY_CONDITIONS = new HashSet<>(
+    protected static final Set<String> AD_HOC_SEARCH_QUERY_CONDITIONS = new HashSet<>(
             Arrays.asList("between", "<=", ">=", "<", ">", "="));
 
-    public static final Object[] loanDateOptions = { "approvalDate", "createdDate", "disbursalDate" };
-    public static final Object[] entityTypeOptions = { "clients", "groups", "loans", "clientIdentifiers" };
-    public static final Object[] loanStatusOptions = { "all", "active", "overpaid", "arrears", "closed", "writeoff" };
+    protected static final Object[] loanDateOptions = { "approvalDate", "createdDate", "disbursalDate" };
+    protected static final Object[] entityTypeOptions = { "clients", "groups", "loans", "clientIdentifiers" };
+    protected static final Object[] loanStatusOptions = { "all", "active", "overpaid", "arrears", "closed", "writeoff" };
 
 }

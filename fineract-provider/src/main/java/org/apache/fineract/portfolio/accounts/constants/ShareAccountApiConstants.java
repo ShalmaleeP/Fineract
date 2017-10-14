@@ -97,18 +97,18 @@ public interface ShareAccountApiConstants {
 	
 	public String closeddate_paramname = "closedDate" ;
 	
-	Set<String> supportedParameters = new HashSet<>(Arrays.asList(locale_paramname, dateformat_paramname, id_paramname,clientid_paramname, productid_paramname,
+	protected Set<String> supportedParameters = new HashSet<>(Arrays.asList(locale_paramname, dateformat_paramname, id_paramname,clientid_paramname, productid_paramname,
 	        submitteddate_paramname,approveddate_paramname, externalid_paramname, currency_paramname, digitsafterdecimal_paramname,
 	        inmultiplesof_paramname, requestedshares_paramname,savingsaccountid_paramname,lockinperiod_paramname,
 	        lockperiodfrequencytype_paramname,minimumactiveperiod_paramname, minimumactiveperiodfrequencytype_paramname,
 	        allowdividendcalculationforinactiveclients_paramname, charges_paramname, applicationdate_param,
 	        purchaseddate_paramname,numberofshares_paramname,purchasedprice_paramname));
 
-	Set<String> approvalParameters = new HashSet<>(Arrays.asList(locale_paramname, dateformat_paramname, approveddate_paramname, note_paramname));
+	protected Set<String> approvalParameters = new HashSet<>(Arrays.asList(locale_paramname, dateformat_paramname, approveddate_paramname, note_paramname));
 	
-	Set<String> activateParameters = new HashSet<>(Arrays.asList(locale_paramname, dateformat_paramname, activatedate_paramname));
+	protected Set<String> activateParameters = new HashSet<>(Arrays.asList(locale_paramname, dateformat_paramname, activatedate_paramname));
 	
-	Set<String> closeParameters = new HashSet<>(Arrays.asList(locale_paramname, dateformat_paramname, closeddate_paramname, note_paramname));
+	protected Set<String> closeParameters = new HashSet<>(Arrays.asList(locale_paramname, dateformat_paramname, closeddate_paramname, note_paramname));
 	
-	Set<String> addtionalSharesParameters = new HashSet<>(Arrays.asList(locale_paramname, requesteddate_paramname, requestedshares_paramname, purchasedprice_paramname, dateformat_paramname));
+	protected Set<String> addtionalSharesParameters = new HashSet<>(Arrays.asList(locale_paramname, requesteddate_paramname, requestedshares_paramname, purchasedprice_paramname, dateformat_paramname));
 }

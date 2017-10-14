@@ -60,7 +60,7 @@ public class LoanProductConfigurableAttributes extends AbstractPersistableCustom
     @Column(name = "grace_on_arrears_ageing", nullable = true)
     private Boolean graceOnArrearsAgeing;
 
-    public static String[] supportedloanConfigurableAttributes = { "amortizationType", "interestType", "transactionProcessingStrategyId",
+    protected static String[] supportedloanConfigurableAttributes = { "amortizationType", "interestType", "transactionProcessingStrategyId",
             "interestCalculationPeriodType", "inArrearsTolerance", "repaymentEvery", "graceOnPrincipalAndInterestPayment",
             "graceOnArrearsAgeing" };
 

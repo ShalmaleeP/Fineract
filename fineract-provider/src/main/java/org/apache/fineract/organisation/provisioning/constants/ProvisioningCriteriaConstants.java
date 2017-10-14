@@ -54,26 +54,26 @@ public interface ProvisioningCriteriaConstants {
 
     public final static String JSON_EXPENSE_ACCOUNT_PARAM = "expenseAccount";
     
-    Set<String> supportedParametersForCreate = new HashSet<>(Arrays.asList(JSON_LOCALE_PARAM, JSON_CRITERIANAME_PARAM,
+    protected Set<String> supportedParametersForCreate = new HashSet<>(Arrays.asList(JSON_LOCALE_PARAM, JSON_CRITERIANAME_PARAM,
             JSON_LOANPRODUCTS_PARAM, JSON_PROVISIONING_DEFINITIONS_PARAM));
 
-    Set<String> supportedParametersForUpdate = new HashSet<>(Arrays.asList(JSON_CRITERIAID_PARAM, JSON_LOCALE_PARAM, JSON_CRITERIANAME_PARAM,
+    protected Set<String> supportedParametersForUpdate = new HashSet<>(Arrays.asList(JSON_CRITERIAID_PARAM, JSON_LOCALE_PARAM, JSON_CRITERIANAME_PARAM,
             JSON_LOANPRODUCTS_PARAM, JSON_PROVISIONING_DEFINITIONS_PARAM));
 
-    Set<String> loanProductSupportedParams = new HashSet<>(Arrays.asList(JSON_LOAN_PRODUCT_ID_PARAM,
+    protected Set<String> loanProductSupportedParams = new HashSet<>(Arrays.asList(JSON_LOAN_PRODUCT_ID_PARAM,
             JSON_LOAN_PRODUCTNAME_PARAM, JSON_LOAN_PRODUCT_BORROWERCYCLE_PARAM)) ;
     
-    Set<String> provisioningcriteriaSupportedParams = new HashSet<>(Arrays.asList(JSON_CATEOGRYID_PARAM,
+    protected Set<String> provisioningcriteriaSupportedParams = new HashSet<>(Arrays.asList(JSON_CATEOGRYID_PARAM,
             JSON_CATEOGRYNAME_PARAM, JSON_MINIMUM_AGE_PARAM, JSON_MAXIMUM_AGE_PARAM, JSON_MINIMUM_AGE_PARAM, JSON_PROVISIONING_PERCENTAGE_PARAM, JSON_EXPENSE_ACCOUNT_PARAM, JSON_LIABILITY_ACCOUNT_PARAM)) ;
     
     
-    Set<String> PROVISIONING_CRITERIA_TEMPLATE_PARAMETER = new HashSet<>(Arrays.asList("definitions", "loanProducts",
+    protected Set<String> PROVISIONING_CRITERIA_TEMPLATE_PARAMETER = new HashSet<>(Arrays.asList("definitions", "loanProducts",
             "glAccounts"));
 
-    Set<String> PROVISIONING_CRITERIA_PARAMETERS = new HashSet<>(Arrays.asList("criteriaName", "loanProducts",
+    protected Set<String> PROVISIONING_CRITERIA_PARAMETERS = new HashSet<>(Arrays.asList("criteriaName", "loanProducts",
             "definitions"));
     
-    Set<String> ALL_PROVISIONING_CRITERIA_PARAMETERS = new HashSet<>(Arrays.asList("criteriaId", "criterianame",
+    protected Set<String> ALL_PROVISIONING_CRITERIA_PARAMETERS = new HashSet<>(Arrays.asList("criteriaId", "criterianame",
             "createdby"));
     
 }

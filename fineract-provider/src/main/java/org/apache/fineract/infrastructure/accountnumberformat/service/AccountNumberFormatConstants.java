@@ -63,12 +63,12 @@ public class AccountNumberFormatConstants {
             accountTypeParamName, prefixTypeParamName, accountTypeOptionsParamName, prefixTypeOptionsParamName));
 
     // Error messages codes
-    public static final String EXCEPTION_DUPLICATE_ACCOUNT_TYPE = "error.msg.account.number.format.duplicate.account.type";
-    public static final String EXCEPTION_ACCOUNT_NUMBER_FORMAT_NOT_FOUND = "error.msg.account.number.format.id.invalid";
+    protected static final String EXCEPTION_DUPLICATE_ACCOUNT_TYPE = "error.msg.account.number.format.duplicate.account.type";
+    protected static final String EXCEPTION_ACCOUNT_NUMBER_FORMAT_NOT_FOUND = "error.msg.account.number.format.id.invalid";
     // JPA related constants
-    public static final String ACCOUNT_NUMBER_FORMAT_TABLE_NAME = "c_account_number_format";
-    public static final String ACCOUNT_TYPE_ENUM_COLUMN_NAME = "account_type_enum";
-    public static final String PREFIX_TYPE_ENUM_COLUMN_NAME = "prefix_type_enum";
-    public static final String ACCOUNT_TYPE_UNIQUE_CONSTRAINT_NAME = "account_type_enum";
+    protected static final String ACCOUNT_NUMBER_FORMAT_TABLE_NAME = "c_account_number_format";
+    protected static final String ACCOUNT_TYPE_ENUM_COLUMN_NAME = "account_type_enum";
+    protected static final String PREFIX_TYPE_ENUM_COLUMN_NAME = "prefix_type_enum";
+    protected static final String ACCOUNT_TYPE_UNIQUE_CONSTRAINT_NAME = "account_type_enum";
 
 }

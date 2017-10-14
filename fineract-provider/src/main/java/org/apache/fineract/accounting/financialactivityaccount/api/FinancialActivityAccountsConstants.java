@@ -24,8 +24,13 @@ import java.util.Set;
 
 public class FinancialActivityAccountsConstants {
 
-    public static final Set<String> RESPONSE_DATA_PARAMETERS = new HashSet<>(Arrays.asList("id", "financialActivityData",
-            "glAccountData", "glAccountOptions", "financialActivityOptions"));
+    private String id = "id";
+    private String fAct = "financialActivityData";
+    private String glActData = "glAccountData";
+    private String glActOpt = "glAccountOptions";
+    private String fao = "financialActivityOptions";
+
+    public static final Set<String> RESPONSE_DATA_PARAMETERS = new HashSet<>(Arrays.asList(id,fAct,glActData,glActOpt,fao));
 
     public static final String resourceNameForPermission = "FINANCIALACTIVITYACCOUNT";
 }

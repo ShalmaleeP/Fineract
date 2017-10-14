@@ -37,15 +37,15 @@ public interface SelfBeneficiariesTPTApiConstants {
 	public static final String CLIENT_NAME_PARAM_NAME = "clientName";
 	public static final String ACCOUNT_TYPE_OPTIONS_PARAM_NAME = "accountTypeOptions";
 
-	public static final Set<String> CREATE_REQUEST_DATA_PARAMETERS = new HashSet<>(
+	protected static final Set<String> CREATE_REQUEST_DATA_PARAMETERS = new HashSet<>(
 			Arrays.asList(LOCALE, NAME_PARAM_NAME, OFFICE_NAME_PARAM_NAME,
 					ACCOUNT_NUMBER_PARAM_NAME, ACCOUNT_TYPE_PARAM_NAME,
 					TRANSFER_LIMIT_PARAM_NAME));
 
-	public static final Set<String> UPDATE_REQUEST_DATA_PARAMETERS = new HashSet<>(
+	protected static final Set<String> UPDATE_REQUEST_DATA_PARAMETERS = new HashSet<>(
 			Arrays.asList(NAME_PARAM_NAME, TRANSFER_LIMIT_PARAM_NAME));
 
-	public static final Set<String> RESPONSE_DATA_PARAMETERS = new HashSet<>(
+	protected static final Set<String> RESPONSE_DATA_PARAMETERS = new HashSet<>(
 			Arrays.asList(NAME_PARAM_NAME, OFFICE_NAME_PARAM_NAME,
 					ACCOUNT_NUMBER_PARAM_NAME, ACCOUNT_TYPE_PARAM_NAME,
 					TRANSFER_LIMIT_PARAM_NAME, ID_PARAM_NAME,

@@ -35,8 +35,10 @@ public interface ProvisioningEntriesApiConstants {
     Set<String> supportedParameters = new HashSet<>(Arrays.asList(JSON_DATE_PARAM, JSON_DATEFORMAT_PARAM,JSON_LOCALE_PARAM,
             JSON_CREATEJOURNALENTRIES_PARAM));
     
-    Set<String> PROVISIONING_ENTRY_PARAMETERS = new HashSet<>(Arrays.asList("provisioningentry", "entries"));
+    public static final pi = "provisioningentry";
+    public static final entries = "entries";
+    Set<String> PROVISIONING_ENTRY_PARAMETERS = new HashSet<>(Arrays.asList(pi, entries));
 
-    Set<String> ALL_PROVISIONING_ENTRIES = new HashSet<>(Arrays.asList("provisioningentry"));
+    Set<String> ALL_PROVISIONING_ENTRIES = new HashSet<>(Arrays.asList(pi));
 
 }
